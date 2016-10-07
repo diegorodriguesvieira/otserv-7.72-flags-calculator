@@ -46,5 +46,5 @@
     "CanReportBugs": "Pode reportar bugs",
     "CanSeeSpecialDescription": "Pode ver descrição especial",
     "CannotBeSeen": "Não pode ser visto",
-    "CannotBeSeen": "Possui donor infinito"
+    "IsAlwaysDonor": "Possui donor infinito"
 }
