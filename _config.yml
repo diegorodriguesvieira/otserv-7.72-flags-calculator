@@ -1,0 +1,66 @@
+# Site settings
+title: OTHire Flags Calculator
+email: diegorodrigues92@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  OTHire Flags Calculator is an automatic calculator for OTHire Open Tibia server
+  player access and permissions system.
+baseurl: "/flags-calculator" # production
+#baseurl: "" # localhost
+url: "https://diegorodriguesvieira.github.io" # the base hostname & protocol for your site
+
+lang: ['en', 'br']
+flags:
+  0: CannotUseCombat
+  1: CannotAttackPlayer
+  2: CannotAttackMonster
+  3: CannotBeAttacked
+  4: CanConvinceAll
+  5: CanSummonAll
+  6: CanIllusionAll
+  7: CanSenseInvisibility
+  8: IgnoredByMonsters
+  9: NotGainInFight
+  10: HasInfiniteMana
+  11: HasInfiniteSoul
+  12: HasNoExhaustion
+  13: CannotUseSpells
+  14: CannotPickupItem
+  15: CanAlwaysLogin
+  16: CanBroadcast
+  17: CanEditHouses
+  18: CannotBeBanned
+  19: CannotBePushed
+  20: HasInfiniteCapacity
+  21: CanPushAllCreatures
+  22: CanTalkRedPrivate
+  23: CanTalkRedChannel
+  24: TalkOrangeHelpChannel
+  25: NotGainExperience
+  26: NotGainMana
+  27: NotGainHealth
+  28: NotGainSkill
+  29: SetMaxSpeed
+  30: SpecialVIP
+  31: NotGenerateLoot
+  32: CanTalkRedChannelAnonymous
+  33: IgnoreProtectionZone
+  34: IgnoreSpellCheck
+  35: IgnoreEquipCheck
+  36: CannotBeMuted
+  37: IsAlwaysPremium
+  38: CanAnswerRuleViolations
+  39: CanReloadContent
+  40: ShowGroupNameInsteadOfVocation
+  41: CannotMoveItems
+  42: CannotMoveCreatures
+  43: CanReportBugs
+  44: CanSeeSpecialDescription
+  45: CannotBeSeen
+  46: IsAlwaysDonor
+
+# Build settings
+markdown: kramdown
+sass:
+  style: :compressed
+gems:
+ - jekyll-coffeescript

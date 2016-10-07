@@ -1,0 +1,38 @@
+---
+---
+@charset "utf-8";
+
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+@import "bourbon/bourbon", "neat/neat", "base", "layout";
+
+#flag {
+	border: 1px solid $grey-color;
+	font: inherit;
+	margin: -1px;
+	padding-left: 5px;
+}
+
+.toggle-all-box {
+	margin: 5px 0 10px 0;
+	padding: 5px 0;
+	border-top: 1px dashed $grey-color;
+	border-bottom: 1px dashed $grey-color;
+}
+
+label input {
+	margin-right: 10px;
+}

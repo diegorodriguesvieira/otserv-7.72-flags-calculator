@@ -1,0 +1,8 @@
+# Created by http://www.gitignore.io
+
+### Jekyll ###
+_site/
+Gemfile.lock
+
+### Sass ###
+.sass-cache

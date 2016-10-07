@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="home hidden">
+
+  <h1 class="page-heading"><span data-translate="CurrentFlag"></span> <input id="flag" type="text" value="0" /></h1>
+
+  <section class="flag-list">
+    <div class="content">
+      {% for flag in site.flags %}
+        {% capture col %}{% cycle 'duck', 'duck', 'goose' %}{% endcapture %}
+
+        <div>
+          <label for="flag-{{ flag[0] }}">
+            <input id="flag-{{ flag[0] }}" type="checkbox" name="flag" value="{{ flag[0] }}"><span data-translate="{{ flag[1] }}"></span>
+          </label>
+        </div>
+
+        {% if col == 'goose' %}
+      </div>
+      <div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="toggle-all-box">
+    <label for="toggleAll"><input id="toggleAll" type="checkbox" /><strong> Toggle All</strong></label>
+  </section>
+
+  <section class="lang-list">
+      <h4>Languages Avaliables:</h4>
+        {% for lang in site.lang %}
+          <span data-lang="{{ lang }}"><img src="{{ "/img/"  | prepend: site.baseurl }}{{ lang }}.png"></span>
+        {% endfor %}
+    </div>
+  </section>
+
+  <section class="loading">
+    <p>Loading ...</p>
+  </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
+<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
